@@ -28,6 +28,7 @@ body {
 .header {
     justify-content: space-between;
     align-items: center;
+    padding-top: 1em;
 }
 
 header h1 {
@@ -51,31 +52,43 @@ li a {
     color: var(--header-secondary);
     text-decoration: none;
     font-size: 18px;
+    font-weight: 300;
 }
 
 .header-main h2 {
     font-size: 48px;
+    margin: 0;
 }
 
 .header-main img {
     display: block;
     margin: 0 auto;
     width: 90%;
+    max-width: 600px;
 }
 
 .header-main {
     gap: 2em;
-    margin: 3em 0;
+    margin-top: 5em;
+    padding-bottom: 5em;
 }
 
+.header-main p {
+    font-size: 18px;
+    color: var(--header-secondary);
+    font-weight: 400;
+}
+        
+
 .header-main > *{
-    /* flex: 1; */
+    flex: 1;
 }
 
 button {
     background-color: var(--btn-clr);
     font-family: inherit;
     font-size: 18px;
+    font-weight: bold;
     color: var(--header-secondary);
     padding: 0.5rem 1.5rem;
     border: transparent;
@@ -83,9 +96,22 @@ button {
     cursor: pointer;
 }
 
+.second {
+    padding-bottom: 5em;
+}
+
 .second .wrapper {
     width: 50%;
     margin: 0 auto;
+}
+
+.second .container {
+    gap: 3em;
+    text-align: center;
+}
+
+.second .container > * {
+    flex: 1;
 }
 
 .second h2 {
@@ -93,6 +119,18 @@ button {
     font-size: 36px;
     font-weight: 900;
     text-align: center;
+    margin: 1.5em 0;
+}
+
+.second img {
+    border: 4px solid var(--btn-clr);
+    border-radius: 5px;
+    width: 100%;
+}
+
+.second p {
+    font-size: 18px;
+    font-weight: 300;
 }
 
 .third {
@@ -100,6 +138,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 5em 0;
 }
 
 .third .wrapper {
@@ -118,12 +157,18 @@ button {
 
 .third .container div p {
     font-weight: bold;
+    font-size: 24px;
+    margin: 0;
 }
 
 .quote {
     font-size: 36px;
     font-weight: 300;
     font-style: italic;
+}
+
+.fourth {
+    padding: 5em 0;
 }
 
 .fourth .wrapper {
@@ -141,9 +186,23 @@ button {
     justify-content: space-between;
     align-items: center;
     /* gap: 6em; */
-    padding: 1rem 8rem;
+    padding: 3rem 8rem;
     color: var(--header-secondary);
     border-radius: 5px;
+}
+
+.box h3,
+.box p {
+    margin: 0;
+}
+
+.box h3 {
+    font-size: 24px;
+}
+
+.box p {
+    font-weight: 300;
+    font-size: 18px;
 }
 
 .box button {
@@ -156,4 +215,6 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1em 0;
+    font-size: 18px;
 }
