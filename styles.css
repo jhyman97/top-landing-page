@@ -1,0 +1,159 @@
+:root {
+    --dark-bg: #1F2937;
+    --btn-clr: #3882F6;
+    --quote-bg: #E5E7EB;
+    --header-main: #F9FAF8;
+    --header-secondary: #E5E7EB;
+}
+
+body {
+    font-family: 'Roboto';
+    margin: 0;
+}
+
+.first {
+    background-color: var(--dark-bg);
+    color: white;
+}
+
+.first .wrapper {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+}
+
+.header {
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    color: var(--header-main);
+    font-size: 24px;
+}
+
+ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 1em;
+}
+
+li {
+    list-style-type: none
+}
+
+li a {
+    color: var(--header-secondary);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.header-main h2 {
+    font-size: 48px;
+}
+
+.header-main img {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.header-main {
+    gap: 2em;
+    margin: 3em 0;
+}
+
+.header-main > *{
+    /* flex: 1; */
+}
+
+button {
+    background-color: var(--btn-clr);
+    font-family: inherit;
+    font-size: 18px;
+    color: var(--header-secondary);
+    padding: 0.5rem 1.5rem;
+    border: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.second .wrapper {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.second h2 {
+    color: var(--dark-bg);
+    font-size: 36px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.third {
+    background-color: var(--quote-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.third .wrapper {
+    width: 45%;
+    margin: 0 auto;
+}
+
+.third .container {
+    flex-direction: column;
+}
+
+.third .container div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.third .container div p {
+    font-weight: bold;
+}
+
+.quote {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.fourth .wrapper {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background-color: var(--btn-clr);
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 6em; */
+    padding: 1rem 8rem;
+    color: var(--header-secondary);
+    border-radius: 5px;
+}
+
+.box button {
+    border: 2px solid var(--header-secondary);
+}
+
+.footer {
+    background-color: var(--dark-bg);
+    color: var(--header-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
